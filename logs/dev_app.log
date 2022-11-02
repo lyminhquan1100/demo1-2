@@ -1,0 +1,97 @@
+02-11-2022 23:43:16.307 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+02-11-2022 23:43:16.314 : INFO  [] : o.a.c.c.StandardService : Starting service [Tomcat]
+02-11-2022 23:43:16.314 : INFO  [] : o.a.c.c.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+02-11-2022 23:43:16.365 : INFO  [] : o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+02-11-2022 23:43:16.366 : INFO  [] : o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 892 ms
+02-11-2022 23:43:16.722 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+02-11-2022 23:43:16.731 : INFO  [] : v.v.d.Demo1Application : Started Demo1Application in 1.658 seconds (JVM running for 2.917)
+02-11-2022 23:43:25.286 : INFO  [] : o.a.c.c.C.[.[.[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-11-2022 23:43:25.287 : INFO  [] : o.s.w.s.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+02-11-2022 23:43:25.288 : INFO  [] : o.s.w.s.DispatcherServlet : Completed initialization in 1 ms
+02-11-2022 23:43:25.390 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Begin addDataToRedis : BankRequest(tokenKey=jedis pool, apiID=aabc, mobile=0345225630, bankCode=VNPAY, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=11200, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=aea70aae7c576736495fa4de4bbec5f948049c1bcad65acd4d1550a2d4a9082c, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+02-11-2022 23:43:25.406 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Find bank code : nameBank = VNPAY
+02-11-2022 23:43:25.407 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Begin getCheckSum
+02-11-2022 23:43:25.407 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Return checkSum 0345225630VNPAY0001100014211002202009291129231120000FT19310RH6P11ghffffffffff
+02-11-2022 23:43:25.412 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.c.RedisConfig : Begin init.
+02-11-2022 23:43:25.421 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.c.RedisConfig : Get pool success. Saving to hashes...
+02-11-2022 23:43:25.424 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.c.RedisConfig : Set redis expire time.
+02-11-2022 23:43:25.424 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : BankService up to Redis : hash = VNPAY, key = jedis pool
+02-11-2022 23:43:25.424 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Begin getBankResponse
+02-11-2022 23:43:25.425 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Begin getCheckSumResponse
+02-11-2022 23:43:25.425 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Return checkSumResponse 00SUCCESS47dec1ed-6f79-4f81-aa75-6dcb0bd77cf81667407405425ghffffffffff
+02-11-2022 23:43:25.425 : INFO  [16bf45a4-329e-4249-93d0-c0665cc84f23] : v.v.d.s.BankServiceImpl : Response status Bank: code = 00, message = SUCCESS
+02-11-2022 23:44:42.700 : INFO  [] : v.v.d.Demo1Application : Starting Demo1Application using Java 11.0.17 on MacBook-Pro-cua-Ly.local with PID 14603 (/Users/lyminhquan/Downloads/demo1-2/target/classes started by lyminhquan in /Users/lyminhquan/Downloads/demo1-2)
+02-11-2022 23:44:42.751 : INFO  [] : v.v.d.Demo1Application : No active profile set, falling back to 1 default profile: "default"
+02-11-2022 23:44:43.325 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+02-11-2022 23:44:43.325 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+02-11-2022 23:44:43.336 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+02-11-2022 23:44:43.430 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+02-11-2022 23:44:43.431 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+02-11-2022 23:44:43.436 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+02-11-2022 23:44:43.672 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+02-11-2022 23:44:43.677 : INFO  [] : o.a.c.c.StandardService : Starting service [Tomcat]
+02-11-2022 23:44:43.677 : INFO  [] : o.a.c.c.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+02-11-2022 23:44:43.726 : INFO  [] : o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+02-11-2022 23:44:43.726 : INFO  [] : o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 802 ms
+02-11-2022 23:44:44.091 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+02-11-2022 23:44:44.100 : INFO  [] : v.v.d.Demo1Application : Started Demo1Application in 2.196 seconds (JVM running for 2.953)
+02-11-2022 23:44:57.636 : INFO  [] : o.a.c.c.C.[.[.[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-11-2022 23:44:57.637 : INFO  [] : o.s.w.s.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+02-11-2022 23:44:57.638 : INFO  [] : o.s.w.s.DispatcherServlet : Completed initialization in 1 ms
+02-11-2022 23:44:57.746 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Begin addDataToRedis : BankRequest(tokenKey=asdasdasd pool, apiID=aabc, mobile=0345225630, bankCode=VNPAY, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=11200, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=aea70aae7c576736495fa4de4bbec5f948049c1bcad65acd4d1550a2d4a9082c, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+02-11-2022 23:44:57.764 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Find bank code : nameBank = VNPAY
+02-11-2022 23:44:57.764 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Begin getCheckSum
+02-11-2022 23:44:57.764 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Return checkSum 0345225630VNPAY0001100014211002202009291129231120000FT19310RH6P11ghffffffffff
+02-11-2022 23:44:57.769 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.c.RedisConfig : Begin init.
+02-11-2022 23:44:57.777 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.c.RedisConfig : Get pool success. Saving to hashes...
+02-11-2022 23:44:57.779 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.c.RedisConfig : Set redis expire time.
+02-11-2022 23:44:57.780 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : BankService up to Redis : hash = VNPAY, key = asdasdasd pool
+02-11-2022 23:44:57.780 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Begin getBankResponse
+02-11-2022 23:44:57.780 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Begin getCheckSumResponse
+02-11-2022 23:44:57.780 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Return checkSumResponse 00SUCCESS63c73eb6-6686-4669-bb6a-d11cd9a54f291667407497780ghffffffffff
+02-11-2022 23:44:57.780 : INFO  [8db139bd-b749-4d07-a759-68f126de6e44] : v.v.d.s.BankServiceImpl : Response status Bank: code = 00, message = SUCCESS
+02-11-2022 23:45:51.740 : INFO  [] : v.v.d.Demo1Application : Starting Demo1Application using Java 11.0.17 on MacBook-Pro-cua-Ly.local with PID 14610 (/Users/lyminhquan/Downloads/demo1-2/target/classes started by lyminhquan in /Users/lyminhquan/Downloads/demo1-2)
+02-11-2022 23:45:51.743 : INFO  [] : v.v.d.Demo1Application : No active profile set, falling back to 1 default profile: "default"
+02-11-2022 23:45:52.046 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+02-11-2022 23:45:52.046 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+02-11-2022 23:45:52.057 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+02-11-2022 23:45:52.136 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+02-11-2022 23:45:52.137 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+02-11-2022 23:45:52.139 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+02-11-2022 23:45:52.366 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+02-11-2022 23:45:52.370 : INFO  [] : o.a.c.c.StandardService : Starting service [Tomcat]
+02-11-2022 23:45:52.371 : INFO  [] : o.a.c.c.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+02-11-2022 23:45:52.418 : INFO  [] : o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+02-11-2022 23:45:52.419 : INFO  [] : o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
+02-11-2022 23:45:52.767 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+02-11-2022 23:45:52.776 : INFO  [] : v.v.d.Demo1Application : Started Demo1Application in 1.306 seconds (JVM running for 2.119)
+02-11-2022 23:45:58.158 : INFO  [] : o.a.c.c.C.[.[.[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-11-2022 23:45:58.159 : INFO  [] : o.s.w.s.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+02-11-2022 23:45:58.161 : INFO  [] : o.s.w.s.DispatcherServlet : Completed initialization in 2 ms
+02-11-2022 23:45:58.300 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Begin addDataToRedis : BankRequest(tokenKey=asdasdasd pool, apiID=aabc, mobile=0345225630, bankCode=VNPAY, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=11200, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=aea70aae7c576736495fa4de4bbec5f948049c1bcad65acd4d1550a2d4a9082c, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+02-11-2022 23:45:58.320 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Find bank code : nameBank = VNPAY
+02-11-2022 23:45:58.321 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Begin getCheckSum
+02-11-2022 23:45:58.321 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Return checkSum 0345225630VNPAY0001100014211002202009291129231120000FT19310RH6P11ghffffffffff
+02-11-2022 23:45:58.326 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.c.RedisConfig : Begin init.
+02-11-2022 23:45:58.335 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.c.RedisConfig : Get pool success. Saving to hashes...
+02-11-2022 23:45:58.338 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.c.RedisConfig : Set redis expire time.
+02-11-2022 23:45:58.338 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : BankService up to Redis : hash = VNPAY, key = asdasdasd pool
+02-11-2022 23:45:58.338 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Begin getBankResponse
+02-11-2022 23:45:58.339 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Begin getCheckSumResponse
+02-11-2022 23:45:58.339 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Return checkSumResponse 00SUCCESS2aa103f4-b311-46fa-8670-6bebfac369d41667407558339ghffffffffff
+02-11-2022 23:45:58.339 : INFO  [48cd22d0-ad30-482c-b85e-702a2dd90f3d] : v.v.d.s.BankServiceImpl : Response status Bank: code = 00, message = SUCCESS
+02-11-2022 23:58:52.176 : INFO  [] : v.v.d.Demo1Application : Starting Demo1Application using Java 11.0.17 on MacBook-Pro-cua-Ly.local with PID 14653 (/Users/lyminhquan/Downloads/demo1-2/target/classes started by lyminhquan in /Users/lyminhquan/Downloads/demo1-2)
+02-11-2022 23:58:52.179 : INFO  [] : v.v.d.Demo1Application : No active profile set, falling back to 1 default profile: "default"
+02-11-2022 23:58:52.671 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+02-11-2022 23:58:52.672 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+02-11-2022 23:58:52.684 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+02-11-2022 23:58:52.772 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+02-11-2022 23:58:52.773 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+02-11-2022 23:58:52.775 : INFO  [] : o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+02-11-2022 23:58:52.998 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+02-11-2022 23:58:53.003 : INFO  [] : o.a.c.c.StandardService : Starting service [Tomcat]
+02-11-2022 23:58:53.004 : INFO  [] : o.a.c.c.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+02-11-2022 23:58:53.060 : INFO  [] : o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+02-11-2022 23:58:53.064 : INFO  [] : o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 839 ms
+02-11-2022 23:58:53.489 : INFO  [] : o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+02-11-2022 23:58:53.508 : INFO  [] : v.v.d.Demo1Application : Started Demo1Application in 2.026 seconds (JVM running for 2.74)
